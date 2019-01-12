@@ -59,5 +59,13 @@
 	<permission name="bootCompleted"/>
 
 	<permission name="hardware"/>
-
+  <feature name="QQPlus">
+    <param name="urlScheme" value="4d8aad8a629327a548c60e1ae217233c"/>
+    <param name="apiKey" value="101483245"/>
+  </feature>
+  <feature name="wx">
+   <param name="urlScheme" value="wxe4c1cb7db809423f"/>
+   <param name="apiKey" value="wxe4c1cb7db809423f"/>
+   <param name="apiSecret" value="777ef514b23bc07e2b96f120ec15aea7"/> 
+ </feature>
 </widget>
