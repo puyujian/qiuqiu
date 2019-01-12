@@ -27,9 +27,11 @@
     		</p>
     		</h3>
     		<ul>
-    			<li>在本页面复制邀请链接或二维码发送给微信或QQ好友</li>
-    			<li>好友使用链接后您将获得对应积分（在我的-积分兑换里可随时查看积分余额）</li>
-    			<li>在获取积分后您可以在APP积分页面兑换影视全网VIP</li>
+    			<h4>
+				<li><font color="#FF0000">在本页面复制邀请链接或二维码发送给微信或QQ好友</font></li>
+    			<li><font color="#FF0000">好友使用链接后您将获得对应积分（在我的-积分兑换里可随时查看积分余额）</font></li>
+    			<li><font color="#FF0000">在获取积分后您可以在APP积分页面兑换影视全网VIP</font></li>
+				</h4>
     		</ul>
     	</div>
   </div>
@@ -161,7 +163,7 @@ if (ret) {
 
   var clipBoard = api.require('clipBoard');
   clipBoard.set({
-      value: '【球球影视4.0】全网VIP视频免费看，高清无广告，再也不用充值会员啦！APP下载地址：'+ret.url
+      value: '【球球影视】全网VIP视频免费看，高清无广告，再也不用充值会员啦！APP下载地址：'+ret.url
   }, function(ret, err) {
       if (ret) {
         api.toast({
@@ -181,7 +183,7 @@ if (ret) {
 
   var clipBoard = api.require('clipBoard');
   clipBoard.set({
-      value: '【球球影视4.0】全网VIP视频免费看，高清无广告，再也不用充值会员啦！APP下载地址：'+copy
+      value: '【球球影视】全网VIP视频免费看，高清无广告，再也不用充值会员啦！APP下载地址：'+copy
   }, function(ret, err) {
       if (ret) {
         api.toast({

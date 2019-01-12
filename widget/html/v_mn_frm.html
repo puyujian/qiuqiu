@@ -116,7 +116,8 @@
 
     <li>
       <div class="game-a" onclick="openWin('{{= value. url }}')">
-        <img src="{{= value. img }}" alt="" style="max-height: 180px; min-height: 180px;">
+      <!--  <img src="http://47.106.223.14{{= value. img }}" alt="" style="max-height: 180px; min-height: 180px;"> -->
+	       <img src="{{= value. img }}" alt="" style="max-height: 180px; min-height: 180px;">
           <em class="aui-group-three" style=" font-size: 12px; "> {{= value. title }}</em>
 
         <br>
@@ -179,7 +180,7 @@ GetVlist();    //获取电影列表
 
       */
       api.toast({
-msg: '(ｷ｀ﾟДﾟ´)!!    你还没登陆！',
+msg: '亲爱的，你还没用登录哦！',
 duration: 2000
 });
 
