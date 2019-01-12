@@ -12,27 +12,27 @@
 			p {
 				margin-bottom: 0.5rem;
 			}
-
+			
 			 ::-webkit-input-placeholder {
 				/* WebKit browsers */
 				color: #eaeaea;
 			}
-
+			
 			 :-moz-placeholder {
 				/* Mozilla Firefox 4 to 18 */
 				color: #eaeaea;
 			}
-
+			
 			 ::-moz-placeholder {
 				/* Mozilla Firefox 19+ */
 				color: #eaeaea;
 			}
-
+			
 			 :-ms-input-placeholder {
 				/* Internet Explorer 10+ */
 				color: #eaeaea;
 			}
-
+			
 			.logo_box li {
 				float: left;
 				/*
@@ -40,12 +40,12 @@
 				width: 50%;
 				text-align: center;
 			}
-
+			
 			.logo_box li img {
 				width: 40%;
 				margin: 20px auto;
 			}
-
+			
 			.logo_box1 li {
 				float: left;
 				/*
@@ -53,7 +53,7 @@
 				width: 100%;
 				text-align: center;
 			}
-
+			
 			.logo_box1 li img {
 				width: 20%;
 				margin: 20px auto;
@@ -93,36 +93,33 @@
 		</div>
 
 		<div id="login_ios" class="myui-from" style="margin-top:-80px;">
-			<p style="text-align: center;color: #CCCCCC;">——QQ微信一键登录——</p>
+			<p style="text-align: center;color: #CCCCCC;">—— 微信一键登录 ——</p>
 			<ul class="myui-from-list logo_box1">
-			<!--<li class="myui-from-list-item" tapmode onclick="QQ_login()">
-			<img src="../image/login/QQ.png" />
-				</li>-->
 				<li class="myui-from-list-item" tapmode onclick="WX_login()">
 					<img src="../image/login/wx.png" />
 				</li>
-				<!--
-  		<li class="myui-from-list-item">
+				
+  		<!--li class="myui-from-list-item">
   			<img src="../image/login/wb.png"/>
-  		</li>-->
+  		</li-->
 			</ul>
 		</div>
 		
 		<div id="login_az" class="myui-from" style="margin-top:-80px;">
-			<p style="text-align: center;color: #CCCCCC;">——QQ微信一键登录——</p>
-			<ul class="myui-from-list logo_box">
-				<li class="myui-from-list-item" tapmode onclick="QQ_login()">
+			<p style="text-align: center;color: #CCCCCC;">—— 微信一键登录 ——</p>
+			<ul class="myui-from-list logo_box1">
+				<!--li class="myui-from-list-item" tapmode onclick="QQ_login()">
 					<img src="../image/login/QQ.png" />
-				</li>
+				</li-->
 				<li class="myui-from-list-item" tapmode onclick="WX_login()">
 					<img src="../image/login/wx.png" />
 				</li>
-				<!--
-  		<li class="myui-from-list-item">
+				
+  		<!--li class="myui-from-list-item">
   			<img src="../image/login/wb.png"/>
-  		</li>--> 
+  		</li-->
 			</ul>
-		</div>
+		</div-->
 
 	</body>
 	<script type="text/javascript" src="../script/api.js"></script>
@@ -147,7 +144,7 @@
 				username.value = api.pageParam.user;
 
 			}
-
+			
 			if(api.systemType == 'ios') {
 				var az = $api.byId('login_az');
 				az.remove();
@@ -265,9 +262,9 @@
 						});
 
 						//alert( JSON.stringify( ret ) );
-
+						
 						localStorage.setItem('accountLogin',0);
-
+						
 						localStorage.setItem('user_id', ret.msg['id']);
 						localStorage.setItem('user_name', username);
 						localStorage.setItem('password', password);
@@ -451,7 +448,7 @@
 										return;
 									} else if(ret.code == 1) {
 										//alert( JSON.stringify( ret ) );
-
+										
 										localStorage.setItem('accountLogin',1);
 										localStorage.setItem('user_id', ret.msg['id']);
 										localStorage.setItem('user_name', user);
@@ -470,8 +467,8 @@
 										localStorage.setItem('user_nickname', ret.msg['nick_name']);
 										localStorage.setItem('user_jinb', ret.msg['share']);
 										localStorage.setItem('tud', ret.msg['tudi']);
-
-
+										
+										
 										api.sendEvent({
 											name: 'newLoingdata',
 											extra: {}
@@ -508,7 +505,7 @@
 		}
 		//注册并登录
 		function denglu() {
-
+			
 						localStorage.setItem('accountLogin',1);
 			var user = localStorage.getItem('Other_openid');
 			var pass = localStorage.getItem('Other_openid');
