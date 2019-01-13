@@ -63,7 +63,7 @@
                                       <img src="http://47.106.223.14/icon-lv.png" alt="">
                                     </em>
   -->
-                                        <i  id="islogin"  >球球影院欢迎您</i>
+                                        <i  id="islogin"  >球球影视欢迎您</i>
                                 </h4>
 
 						<div style="float:left;border:solid 1px 000;" id="islogin_vip"></div>
@@ -193,6 +193,15 @@
 					<span class="aui-well-item-fr"></span>
 				</a>
 
+                            <a onClick="openWin('guankan_help_win')"  class="aui-well-item">
+                            <div class="aui-well-item-hd">
+                                <img src="../image/app/videohelp.png" alt="">
+                            </div>
+                            <div class="aui-well-item-bd">
+                                <h3>常见问题</h3>
+                            </div>
+                            <span class="aui-well-item-fr"></span>
+                        </a>
 
 				<a onClick="kefuWeixin()" class="aui-well-item">
 					<div class="aui-well-item-hd">
@@ -232,7 +241,7 @@
 					<div class="aui-well-item-bd">
 						<h3>关于我们</h3>
 					</div>
-					<span class="aui-well-item-fr" style=" font-size: 12px; " onClick="api.alert({title: '免责声明',msg: '本站所有视频均来自互联网，版权归原创者所有，如果侵犯了您的权益，请通知我们，我们将会在3个正常工作日内删除其侵权内容，谢谢合作。',  });"> 球球影院  <span style="color:#7bbfea">免责声明</span> </span>
+					<span class="aui-well-item-fr" style=" font-size: 12px; " onClick="api.alert({title: '免责声明',msg: '本站所有视频均来自互联网，版权归原创者所有，如果侵犯了您的权益，请通知我们，我们将会在3个正常工作日内删除其侵权内容，谢谢合作。',  });"> 球球影视  <span style="color:#7bbfea">免责声明</span> </span>
 				</a>
 
 			</div>
@@ -257,7 +266,7 @@
 				tips: {
 					pull: '你…你想干什么！你不要过来！',
 					threshold: '讨厌 快放开我 非礼呀！',
-					load: '球球影院 享受生活'
+					load: '球球影视 享受生活'
 				}
 
 			}, function() {
@@ -430,7 +439,7 @@
 			}
 
 			if(user_id == "1") {
-				time_ico.innerHTML = ' 亲爸爸 ';
+				time_ico.innerHTML = ' 管理员 ';
 				time.innerHTML = ' 欢迎回来！';
 
 				weichat.innerHTML = '微信号：Z_Echo_B';
@@ -958,7 +967,7 @@
 			/*  var user_id = localStorage.getItem('user_id');
 			  var user_name = localStorage.getItem('user_name');
 			  var user_password = localStorage.getItem('password');
-			  var user_power = localStorage.getItem('power');   //权力  用于判断亲爸爸
+			  var user_power = localStorage.getItem('power');   //权力  用于判断管理员
 			  //alert(user_time);
 			*/
 
@@ -1064,7 +1073,7 @@
 
 			}
 
-			//亲爸爸登录
+			//管理员登录
 			if(localStorage.getItem('user_id') == 1) {
 
 				api.ajax({
@@ -1082,7 +1091,7 @@
 							/*       alert('登录成功');
 							      原弹窗提示  */
 							api.toast({
-								msg: '亲爸爸登录',
+								msg: '管理员登录',
 								duration: 5000
 							});
 			var delay = 0;
@@ -1120,7 +1129,7 @@
 			var user_id = localStorage.getItem('user_id');
 			var user_name = localStorage.getItem('user_name');
 			var user_password = localStorage.getItem('password');
-			var user_power = localStorage.getItem('power'); //权力  用于判断亲爸爸
+			var user_power = localStorage.getItem('power'); //权力  用于判断管理员
 			//alert(user_time);
 
 			if(localStorage.getItem('user_id') < 1) {
@@ -1225,7 +1234,7 @@
 
 			}
 
-			//亲爸爸取码
+			//管理员取码
 			if(localStorage.getItem('user_id') == 1) {
 
 				api.ajax({
@@ -1243,7 +1252,7 @@
 							/*       alert('登录成功');
 							      原弹窗提示  */
 							api.toast({
-								msg: '亲爸爸登录',
+								msg: '管理员登录',
 								duration: 5000
 							});
                             			var delay = 0;
@@ -1281,7 +1290,7 @@
 			var user_id = localStorage.getItem('user_id');
 			var user_name = localStorage.getItem('user_name');
 			var user_password = localStorage.getItem('password');
-			var user_power = localStorage.getItem('power'); //权力  用于判断亲爸爸
+			var user_power = localStorage.getItem('power'); //权力  用于判断管理员
 			//alert(user_time);
 
 			if(localStorage.getItem('user_id') < 1) {
@@ -1386,7 +1395,7 @@ var delay = 0;
 
 			}
 
-			//亲爸爸APP设置
+			//管理员APP设置
 			if(localStorage.getItem('user_id') == 1) {
 
 				api.ajax({
@@ -1404,7 +1413,7 @@ var delay = 0;
 							/*       alert('登录成功');
 							      原弹窗提示  */
 							api.toast({
-								msg: '亲爸爸登录',
+								msg: '管理员登录',
 								duration: 5000
 							});
 			var delay = 0;
@@ -1442,7 +1451,7 @@ var delay = 0;
 			var user_id = localStorage.getItem('user_id');
 			var user_name = localStorage.getItem('user_name');
 			var user_password = localStorage.getItem('password');
-			var user_power = localStorage.getItem('power'); //权力  用于判断亲爸爸
+			var user_power = localStorage.getItem('power'); //权力  用于判断管理员
 			//alert(user_time);
 
 			if(localStorage.getItem('user_id') < 1) {
@@ -1514,7 +1523,7 @@ var delay = 0;
 
 			}
 
-			//亲爸爸用户管理
+			//管理员用户管理
 			if(localStorage.getItem('user_id') == 1) {
 
 				api.ajax({
@@ -1532,7 +1541,7 @@ var delay = 0;
 							/*       alert('登录成功');
 							      原弹窗提示  */
 							api.toast({
-								msg: '亲爸爸登录',
+								msg: '管理员登录',
 								duration: 5000
 							});
 			var delay = 0;
