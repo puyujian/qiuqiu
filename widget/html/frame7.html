@@ -107,7 +107,7 @@ margin: 0 auto;
     position: relative;
     display: block;"></span>
             <div id="islogin" class="user-box-2" style="font-size:1rem;color:#000;text-shadow: 0px 5px 15px 2px #000;" onClick="toLogin()">
-                百度演示
+                球球演示
             </div>
             <div id="time" class="user-box-2" style="font-size:0.75rem;color:#000;" onClick="toLogin()">
  
@@ -118,7 +118,7 @@ margin: 0 auto;
         <!--<div class="box-shadow1" style="background:rgba(245, 245, 245,0.3);overflow:hidden;position: absolute;width: 92%;bottom: 0px;left:4%;border-radius:5px;">
             <li style='width:50%;float: left;text-align: -webkit-center;border-right: 3px' onClick="tojinbi()">
                 <img src=../image/jinbi.png style='width: 30px;height: 30px;margin-top: 10px;' />
-                <p style='color:red;margin: 5px 0px;'><b>百度金币: </b><b id="jinb">0</b><b>￥</b></p>
+                <p style='color:red;margin: 5px 0px;'><b>球球金币: </b><b id="jinb">0</b><b>￥</b></p>
             </li>
             <li style='width:50%;float: left;text-align: -webkit-center;border-right: 3px' onClick="totudi()">
                 <img src=../image/fenxiang.png style='width: 30px;height: 30px;margin-top: 10px;' />
@@ -145,7 +145,7 @@ margin: 0 auto;
         <div>
             <li style='width:50%;float: left;text-align: -webkit-center;border-right: 3px' onClick="tojinbi()">
                 <img src=../image/jinbi.png style='width: 30px;height: 30px;margin-top: 10px;' />
-                <p style='color:red;margin: 5px 0px;'><b>百度金币: </b><b id="jinb">0</b><b>￥</b></p>
+                <p style='color:red;margin: 5px 0px;'><b>球球金币: </b><b id="jinb">0</b><b>￥</b></p>
             </li>
             <li style='width:50%;float: left;text-align: -webkit-center;border-right: 3px' onClick="totudi()">
                 <img src=../image/fenxiang.png style='width: 30px;height: 30px;margin-top: 10px;' />
@@ -348,7 +348,7 @@ margin: 0 auto;
         api.parseTapmode();
         var appVersion = api.appVersion;
         var vsion = $api.byId('vsion');
-        vsion.innerHTML = '百度演示 v' + appVersion + ' <span style="color:#7bbfea">免责声明</span>';
+        vsion.innerHTML = '球球演示 v' + appVersion + ' <span style="color:#7bbfea">免责声明</span>';
         //监听重新获取客服联系方式广播
         api.addEventListener({
             name: 'newLoingdata'
@@ -553,7 +553,7 @@ margin: 0 auto;
         if (localStorage.getItem('Other_name') != undefined & localStorage.getItem('Other_name') != 'undefined') {
             islogin.innerHTML = localStorage.getItem('Other_name');
         } else {
-            islogin.innerHTML = '百度演示';
+            islogin.innerHTML = '球球演示';
         }
         if (localStorage.getItem('Other_img') != undefined & localStorage.getItem('Other_img') != 'undefined') {
             userImg.src = localStorage.getItem('Other_img');

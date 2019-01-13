@@ -26,7 +26,7 @@
 			</form>
 
 			<div class="myui-jifen-1">
-				<h2 id="sign"></h2>当前百度金币
+				<h2 id="sign"></h2>当前球球金币
 			</div>
 			<div id="bili2" class="myui-jifen-2" style="padding-top:2rem;">
 
@@ -218,8 +218,8 @@
 				if(ret) {
 					//var bili = $api.byId('bili');
 
-					//bili.innerHTML = '100百度金币可以兑换1天会员资格！';
-					bili2.innerHTML = '100百度金币可以兑换1元现金!';
+					//bili.innerHTML = '100球球金币可以兑换1天会员资格！';
+					bili2.innerHTML = '100球球金币可以兑换1元现金!';
 					api.hideProgress();
 				} else {
 					api.hideProgress();
@@ -236,10 +236,10 @@
 
 			var bianl1 = document.querySelector('#sign');
 			var bianl2 = document.querySelector('#count').value;
-			var bianl3 = Number(bianl1.innerText) - (Number(bianl2) * 100); //兑换百度金币/积分比率!!!!
+			var bianl3 = Number(bianl1.innerText) - (Number(bianl2) * 100); //兑换球球金币/积分比率!!!!
 			var bianyu = Number(bianl3);
 			if(bianyu <= 0) {
-				alert('百度金币不足，无法兑换')
+				alert('球球金币不足，无法兑换')
 				return;
 			}
 			var shuji = Number(bianl2);
@@ -266,14 +266,14 @@
 
 			var bianl1 = document.querySelector('#sign');
 			var bianl2 = document.querySelector('#count').value;
-			var bianl3 = Number(bianl1.innerText) - (Number(bianl2) * 100); //兑换百度金币/积分比率!!!!
+			var bianl3 = Number(bianl1.innerText) - (Number(bianl2) * 100); //兑换球球金币/积分比率!!!!
 			var bianyu = Number(bianl3);
 			if(bianyu <= 0) {
-				alert('百度金币不足，无法兑换')
+				alert('球球金币不足，无法兑换')
 				return;
 			}
 			/*if(bianl2 < 20) {
-				alert('金额满50元，方可提现，或者您可以用金币兑换您的百度演示VIP时长哦！继续努力邀请好友吧！')
+				alert('金额满50元，方可提现，或者您可以用金币兑换您的球球演示VIP时长哦！继续努力邀请好友吧！')
 				return;
 			}*/
 			var shuji = Number(bianl2);
