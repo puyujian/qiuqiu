@@ -34,19 +34,8 @@
     }
     </style>
 
+
 </head>
-
- <div class="aui-searchbar" id="search" style="background-color:#fff;">
-							    <div class="aui-searchbar-input aui-border-radius" >
-							        <i class="aui-iconfont aui-icon-search"></i>
-
-							            <input type="text" placeholder="输入影片关键词搜索,播放速度更快" id="ff-wd">
-
-							    </div>
-							    <div class="aui-btn aui-btn-info aui-btn-block" tapmode onclick="ss()" style="width:60px;height:30px;line-height:30px;margin-right:9px;">搜索</div>
-							</div>
-
-                                <div class="br"></div>
 <body style="background-color:#fff">
 
 
@@ -56,7 +45,7 @@
 
 
                 <!--顶部横幅未加载完成时的提示-->
-                  <img id="bpic" src="../image/app/yujiazai/gzh.png"  onClick="UnloadedCompleted()">
+                  <img id="bpic" src="../image/default_picture/default_banner.png"  onClick="UnloadedCompleted()">
                 <!--顶部横幅未加载完成时的提示-->
 
 
@@ -67,17 +56,16 @@
 
 
 
-           <div class="gonggao">
-    <div class="list-title-l">
-      <i class="iconfont icon-xitonggonggao" style="color:#a00000;font-size: 1rem"></i>
-    </div>
-    <div class="gonggao-r" style="float:right;width: 89%;">
-        <marquee scrollamount="2">
-         <span id="gonggao" style="color:#a00000;font-size: 0.65rem;padding-top:0.3rem;"></span>
-       </marquee>
+              <div class="gonggao" style=" border-radius: 0px 0px 30px 30px; box-shadow: 0.01rem 0.15rem 0.1rem rgba(0, 0, 0, 0.05);">
+                <div class="list-title-l">
+                  <i class="iconfont icon-xitonggonggao" style="color:#cdcbcb;font-size: 1rem"></i>
                 </div>
-
+                <div class="gonggao-r">
+                  <span id="gonggao" style="color:#cdcbcb;font-size: 0.65rem;padding-top:0.3rem;margin-left: 10px;">球球影视全新体验，全网会员视频任性看</span>
+                </div>
               </div>
+
+                                <div class="br"></div>
 
 
 
@@ -162,6 +150,71 @@
                 <!--VIP 观影区未加载完成时的提示-->
 
       </div>
+	 </div>
+		   <!--<div class="aui-row">
+
+	<div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.zhangyu.tv/')">
+          <i class="aui-iconfont"><img src="../image/zy.png"/></i>
+          <div class="aui-grid-label">体育直播</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.huya.com/')">
+          <i class="aui-iconfont"><img src="../image/huya.jpg"/></i>
+          <div class="aui-grid-label">虎牙直播</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('https://www.douyu.com/')">
+          <i class="aui-iconfont"><img src="../image/douyu.png"/></i>
+          <div class="aui-grid-label">斗鱼直播</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('https://www.panda.tv/')">
+          <i class="aui-iconfont"><img src="../image/xiongmao.jpg"/></i>
+          <div class="aui-grid-label">熊猫直播</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.kktv5.com/')">
+          <i class="aui-iconfont"><img src="../image/kk.jpg"/></i>
+          <div class="aui-grid-label">KK直播</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('https://m.23us.so/')">
+          <i class="aui-iconfont"><img src="../image/xiaoshuo.jpg"/></i>
+          <div class="aui-grid-label">顶点小说</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('https://www.qiushibaike.com/')">
+          <i class="aui-iconfont"><img src="../image/qiushi.jpg"/></i>
+          <div class="aui-grid-label">糗事百科</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.24mxm.cn')">
+          <i class="aui-iconfont"><img src="../image/weizhi.png"/></i>
+          <div class="aui-grid-label">在线影院</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.24mxm.cn/index.php/vod/type/id/2.html')">
+          <i class="aui-iconfont"><img src="../image/lxj.png"/></i>
+          <div class="aui-grid-label">电视专场</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.24mxm.cn/index.php/vod/type/id/4.html')">
+          <i class="aui-iconfont"><img src="../image/dongman.jpg"/></i>
+          <div class="aui-grid-label">动漫专场</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.24mxm.cn/index.php/vod/type/id/3.html')">
+          <i class="aui-iconfont"><img src="../image/kldby.png"/></i>
+          <div class="aui-grid-label">综艺专场</div>
+		  </div>
+
+		  <div class="aui-col-xs-3 pt-list" tapmode onClick="openVipurl('http://www.24mxm.cn/index.php/vod/show/id/1/year/2018.html')">
+          <i class="aui-iconfont"><img src="../image/zxrb.jpg"/></i>
+          <div class="aui-grid-label">影院热播</div>
+		  </div>
+      </div>
+
+      </div>-->
 
   </section>
 
@@ -171,7 +224,7 @@
 
 
                 <!--底部横幅未加载完成时的提示-->
-                  <img id="bpic" src="../image/app/ys.png"  onClick="UnloadedCompleted()">
+                  <img id="bpic" src="../image/default_picture/youxizhibo.png"  onClick="UnloadedCompleted()">
                 <!--底部横幅未加载完成时的提示-->
     </div>
   </div>
@@ -253,6 +306,7 @@
         </div>
 
   {{~}}
+
 </script>
 <script type="text/x-dot-template" id="lrtpl">
 <img id="bpic" src="http://47.106.223.14/{{=it.picurl}}" style="border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);" onclick="imgUrl('{{=it.linkurl}}')">
@@ -299,19 +353,19 @@
           api.setCustomRefreshHeaderInfo({
               bgColor : '#fff',
                images: [
-                    'widget://image/app/tm.png',
+                    'widget://image/app/xiala/shuaxin.png',
                       ],
                       tips: {
                           pull: '你…你想干什么！你不要过来！',
                           threshold: '讨厌 快放开我 非礼呀！',
-                          load: '爱尚影视 服务完美'
+                          load: '球球影视 享受生活'
                       }
 
           }, function() {
               //下拉刷新被触发，自动进入加载状态，使用 api.refreshHeaderLoadDone() 手动结束加载中状态
               setTimeout(function(){
           api.refreshHeaderLoadDone()
-              }, 50);
+              }, 3000);
           });
           //下拉刷新
 
@@ -850,13 +904,13 @@ function banNer(){
 
       /*新提示*/
       api.toast({
-          msg: '(爱尚影视提醒您！    你还没登陆！)',
-          duration: 2000
+          msg: '亲爱的，你还没用登录哦！',
+          duration: 5000
       });
       api.openWin({
           name: 'login',
           url: './login.html',
-          delay: 100
+          delay: 2000
       });
       return;
 
@@ -901,7 +955,7 @@ function banNer(){
                                                                                    api.openWin({
                                                                                        name: 'video_win',
                                                                                        url: './video_win.html',
-                                                                                       delay: 100,
+                                                                                       delay: 800,
                                                                                        pageParam:{url:url},
                                                                                        bgColor: 'rgba(0,0,0,0)'
                                                                                    });
@@ -953,7 +1007,7 @@ function banNer(){
                                                                              api.openWin({
                                                                                  name: 'video_win',
                                                                                  url: './video_win.html',
-                                                                                 delay: 100,
+                                                                                 delay: 800,
                                                                                  pageParam:{url:url},
                                                                                  bgColor: '#000000'
                                                                              });
@@ -1067,7 +1121,7 @@ function banNer(){
                                                                                      api.openWin({
                                                                                          name: 'h5',
                                                                                          url: './h5.html',
-                                                                                         delay: 100,
+                                                                                         delay: 800,
                                                                                          pageParam:{url:url},
                                                                                          bgColor: 'rgba(0,0,0,0)'
                                                                                      });
@@ -1126,7 +1180,7 @@ function banNer(){
                                                                                      api.openWin({
                                                                                          name: 'h5',
                                                                                          url: './h5.html',
-                                                                                         delay: 100,
+                                                                                         delay: 800,
                                                                                          pageParam:{url:url},
                                                                                          bgColor: '#000000'
                                                                                      });

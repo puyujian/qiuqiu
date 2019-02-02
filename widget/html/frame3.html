@@ -19,7 +19,7 @@
     <div id="slidebox" class="aui-slide-wrap" style="margin: 10px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);" >
 
                       <!--顶部横幅未加载完成时的提示-->
-                        <img id="bpic" src="../image/app/yujiazai/gzh.png"  onClick="UnloadedCompleted()">
+                        <img id="bpic" src="../image/default_picture/default_banner.png"  onClick="UnloadedCompleted()">
                       <!--顶部横幅未加载完成时的提示-->
 
 
@@ -94,11 +94,11 @@
   <div class="fx-box" id="guanggao">
 
     <div class="fx-box-t">
-      <img src="../image/app/yujiazai/gzh.png" style="margin: 10px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);"  tapmode onClick="UnloadedCompleted()">
+      <img src="../image/default_picture/default_banner.png" style="margin: 10px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);"  tapmode onClick="UnloadedCompleted()">
     </div>
     <div class="br"></div>
     <div class="fx-box-t">
-      <img src="../image/app/yujiazai/gzh.png" style="margin: 10px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);"  tapmode onClick="UnloadedCompleted()">
+      <img src="../image/default_picture/default_banner.png" style="margin: 10px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);"  tapmode onClick="UnloadedCompleted()">
     </div>
 
 
@@ -110,7 +110,7 @@
           <div  class="aui-slide-wrap" style="margin: 10px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);" >
 
                             <!--顶部横幅未加载完成时的提示-->
-                              <img id="bpic" src="../image/app/yujiazai/gzh.png"  onClick="UnloadedCompleted()">
+                              <img id="bpic" src="../image/default_picture/default_banner.png"  onClick="UnloadedCompleted()">
                             <!--顶部横幅未加载完成时的提示-->
 
           </div>
@@ -121,7 +121,7 @@
           <div  class="aui-slide-wrap" style="margin: 10px;border-radius:0.5rem;box-shadow:0.1rem 0.1rem 0.4rem rgba(99, 99, 99, 0.3);" >
 
                             <!--顶部横幅未加载完成时的提示-->
-                              <img id="bpic" src="../image/app/yujiazai/gzh.png"  onClick="UnloadedCompleted()">
+                              <img id="bpic" src="../image/default_picture/default_banner.png"  onClick="UnloadedCompleted()">
                             <!--顶部横幅未加载完成时的提示-->
           </div>
 
@@ -197,19 +197,19 @@
         api.setCustomRefreshHeaderInfo({
             bgColor : '#fff',
              images: [
-                    'widget://image/app/tm.png',
-                      ],
+                  'widget://image/app/xiala/shuaxin.png',
+                    ],
                     tips: {
                         pull: '你…你想干什么！你不要过来！',
                         threshold: '讨厌 快放开我 非礼呀！',
-                        load: '爱尚影视 服务完美'
+                        load: '球球影视 享受生活'
                     }
 
         }, function() {
             //下拉刷新被触发，自动进入加载状态，使用 api.refreshHeaderLoadDone() 手动结束加载中状态
             setTimeout(function(){
         api.refreshHeaderLoadDone()
-            }, 50);
+            }, 3000);
         });
         //下拉刷新
 

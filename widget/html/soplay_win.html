@@ -8,18 +8,18 @@
     <link rel="stylesheet" type="text/css" href="../css/aui.css" />
     <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
 	<style type="text/css">
-       html,body{background-color:#000000;}
+       html,body{background-color:#242424;}
     </style>
 </head>
 
 <body>
-   <header class="aui-bar aui-bar-nav" id="header" style="background: #000;">
+  <header class="aui-bar aui-bar-nav" id="header" style="background: linear-gradient(#883ddb, #883ddb);color:#fff;position: relative;padding-top:25px;">
       <a class="aui-btn aui-pull-left" tapmode onclick="closeWin()">
-          <span class="aui-iconfont aui-icon-left" style=color:#c4c4c4 ></span>
+          <span class="aui-iconfont aui-icon-left" style=color:#fff ></span>
       </a>
-      <div id="title" class="aui-title" style="color: #c4c4c4;">正在播放</div>
-      <a id="play" class="aui-btn aui-pull-right" style=color:#c4c4c4 tapmode onclick="jieXi()">
-           <i class="icon icon-genghuanxianlu-b"></i>更换线路
+      <div id="title" class="aui-title" >正在播放视频....</div>
+      <a id="play" class="aui-btn aui-pull-right" style=color:#fff tapmode onclick="jieXi()">
+          更换线路
       </a>
   </header>
 </body>
@@ -91,7 +91,7 @@
 
     function jieXi(){
       api.actionSheet({
-          title: '专线VIP线路',
+          title: '球球影视VIP线路',
           cancelTitle: '取消',
           buttons: ['VIP线路1', 'VIP线路2', 'VIP线路3', 'VIP线路4', 'VIP线路5']
       }, function(ret, err) {
