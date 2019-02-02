@@ -36,7 +36,7 @@
     </style>
     <script type="text/javascript">
 
-      localStorage.setItem('api_url',"http://baidu.com");
+      localStorage.setItem('api_url',"http://47.106.223.14");
     </script>
 </head>
 <body>
@@ -121,7 +121,7 @@
 
 <script type="text/x-dot-template" id="hongbaotpl">
 
-<img src="http://baidu.com/{{=it.picurl}}" style="position: absolute;width: 1.5rem;top: 0.3rem;right: 0.5rem;" onclick="toBanner('{{=it.linkurl}}')">{{=it.name}}
+<img src="http://47.106.223.14/{{=it.picurl}}" style="position: absolute;width: 1.5rem;top: 0.3rem;right: 0.5rem;" onclick="toBanner('{{=it.linkurl}}')">{{=it.name}}
 </script>
 
 <script type="text/javascript" src="script/api.js"></script>
@@ -306,7 +306,7 @@
 
 
                         api.ajax({
-                            url: 'http://baidu.com/AppHello.html',
+                            url: 'http://47.106.223.14/AppHello.html',
                             method: 'get'
                         },function(ret, err){
                             if (ret) {
