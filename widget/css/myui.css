@@ -258,9 +258,9 @@ img {
 .sp-content .rule h3 p {
 	position: relative;
 	top: -.25rem;
-	color: #787878;
+	color: #000;
 	letter-spacing: 2px;
-	background: #fffae4;
+	background: #FFB6C1;
 	width: 1.5rem;
 	margin: auto;
 	font-weight: 700
@@ -273,7 +273,7 @@ img {
 
 .sp-content .rule ul li {
 	list-style-type: decimal;
-	color: #aaa;
+	color: #000;
 	padding-bottom: .1rem
 }
 

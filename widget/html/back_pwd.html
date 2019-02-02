@@ -32,7 +32,8 @@
       </a>
       <div id="title" class="aui-title">修改密码</div>
   </header>
-
+  <div align="center"><img src="../image/app/logo1.png" style="
+    width: 35%;"></div>
 
   <div class="myui-from">
     <ul class="myui-from-list">
@@ -209,7 +210,7 @@
       var content = escape('#code#='+code_data);
       //alert(content);
       api.ajax({
-          url: 'http://47.106.223.14/login/login/yzcode.html',
+          url: 'http://baidu.com/login/login/yzcode.html',
           method: 'get',
           data: {
               values: {
@@ -243,7 +244,7 @@
      function getApicode(username,content) {
           var btn1 = $api.byId('btn1');
           api.ajax({
-          url: 'http://v.juhe.cn/sms/send?mobile='+username+'&tpl_id=95861&tpl_value='+content+'&key=b340980a9f1ca75927d61b173071fd80',
+          url: 'http://v.juhe.cn/sms/send?mobile='+username+'&tpl_id=110066&tpl_value='+content+'&key=9d2ecbb4b0df6109f64e2407ebbae832',
               method: 'get'
           },function(ret, err){
                   api.toast({

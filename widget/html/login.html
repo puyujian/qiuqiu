@@ -33,11 +33,12 @@
       </a>
       <div id="title" class="aui-title">会员登录</div>
   </header>
-
+  <div align="center"><img src="../image/app/logo1.png" style="
+    width: 35%;"></div>
   <div class="myui-from">
     <ul class="myui-from-list">
       <li class="myui-from-list-item">
-        <input type="tel" minlength="11" maxlength="11" id="username" placeholder="请输入账号" class="myui-from-list-item-input" value ="">
+        <input type="tel" minlength="11" maxlength="11" id="username" placeholder="请输入手机号" class="myui-from-list-item-input" value ="">
       </li>
       <li class="myui-from-list-item">
         <input id="password" type="password" placeholder="请输入密码" class="myui-from-list-item-input" value ="">
@@ -52,6 +53,7 @@
       找回密码
     </div>
     <div class="to-login-l" tapmode onclick="openWin('reg_frm')">
+    	
       注册账号
     </div>
   </div>
@@ -160,7 +162,7 @@ api.toast({
         //请求数据库并存储用户信息
         var api_url = localStorage.getItem('api_url');
         api.ajax({
-            url: 'http://47.106.223.14/login/login/veifys.html',
+            url: 'http://baidu.com/login/login/veifys.html',
             method: 'get',
             data: {
                 values: {
@@ -176,7 +178,7 @@ api.toast({
                 alert('账号或密码不正确');
   原弹窗提示  */
                 api.toast({
-                    msg: '(ｷ｀ﾟДﾟ´)!! 账号或密码不正确',
+                    msg: '(爱尚影视提醒您！ 账号或密码不正确)',
                     duration: 5000
                 });
 
@@ -229,7 +231,7 @@ api.toast({
             /*   alert('网络错误！');
                   原弹窗提示*/
                   api.toast({
-                      msg: '(ｷ｀ﾟДﾟ´)!!  网络错误 请检查！',
+                      msg: '(爱尚影视提醒您！  网络错误 请检查！)',
                       duration: 5000
                   });
 

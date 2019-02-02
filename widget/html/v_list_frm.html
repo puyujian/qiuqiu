@@ -52,11 +52,11 @@
     	                                    </div>
     	                                    <div class="aui-flex-box">
     																				<p>
-    																						<em class="aui-group-three" style=" font-size: 12px; "> 最新热门电影</em>
+    																						<em class="aui-group-three" style=" font-size: 12px; "> 院线电影抢先看</em>
     																				</p>
     	                                        <h3 style=" font-size: 10px; ">当下最火热的大片</h3>
     	                                        <p>
-    	                                            <em class="aui-group-one" style=" font-size: 12px; ">不定时更新</em> <em class="aui-group-two" style=" font-size: 12px; ">经典热门大片</em>
+    	                                            <em class="aui-group-one" style=" font-size: 12px; ">随时更新</em> <em class="aui-group-two" style=" font-size: 12px; ">省下您购电影票的钱</em>
     	                                        </p>
 
     	                                    </div>
@@ -168,7 +168,7 @@ GetVlist();    //获取电影列表
 
       */
       api.toast({
-msg: '(ｷ｀ﾟДﾟ´)!!    你还没登陆！',
+msg: '(爱尚影视提醒您！    你还没登陆！)',
 duration: 2000
 });
 
@@ -393,7 +393,7 @@ function GetVlist() {
     var div_list = $api.byId('div_list');
     var template = $api.byId('template');
     api.ajax({
-        url: 'http://47.106.223.14/login/login/vlist.html',
+        url: 'http://baidu.com/login/login/vlist.html',
         method: 'get'
     },function(ret, err){
         if (ret) {

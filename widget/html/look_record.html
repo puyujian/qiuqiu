@@ -5,9 +5,9 @@
     <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
     <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
     <title>title</title>
-    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
-    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/aui5.css" />
+    <link rel="stylesheet" type="text/css" href="../css/api5.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style5.css"/>
     <style>
     	body{
 
@@ -21,17 +21,7 @@
     </style>
 </head>
 <body>
-	<!--
-  <header class="aui-bar aui-bar-nav" id="aui-header">
-      <a class="aui-btn aui-pull-left" style="color:#FFF" tapmode onclick="closeWin()">
-        <span class="aui-iconfont aui-icon-left" style="color:#FFF"></span>
-    </a>
-    <a class="aui-btn aui-pull-right" style="color:#FFF" tapmode onclick="clearR()">
-        清空
-    </a>
-      <div id="title" class="aui-title" style="color:#FFF">观看记录</div>
-  </header>
--->
+
 
 <header class="aui-navBar aui-navBar-fixed" style="background: #fff;" id="aui-header">
 								<a  onclick="closeWin()" class="aui-navBar-item"  >
@@ -52,8 +42,8 @@
 
 
 </body>
-<script type="text/javascript" src="../script/api.js"></script>
-<script type="text/javascript" src="../script/date.min.js"></script>
+<script type="text/javascript" src="../script/api5.js"></script>
+<script type="text/javascript" src="../script/date.min5.js"></script>
 <script type="text/javascript">
 	apiready = function(){
 		 var header = $api.byId('aui-header');
@@ -74,11 +64,11 @@
 	};
 
 
-	/////////////清除观看记录 方法  clearR   S   ////////////
+
 	function clearR(){
 
 		api.ajax({
-	        url:'http://47.106.223.14/login/login/deljilu?uid=' + localStorage.getItem('user_id')
+	        url:'lx.ighouse.cn/login/login/deljilu?uid=' + localStorage.getItem('user_id')
         },function(ret,err){
         	//coding...
         });
@@ -87,18 +77,13 @@
 	        script: 'update();'
         });
 	}
-	/////////////清除观看记录 方法  clearR   E   ////////////
 
 
-	/////////////关闭页面 方法  closeWin   S   ////////////
+
 	function closeWin(){
 		api.closeWin();
 	}
-	/////////////关闭页面 方法  closeWin   E   ////////////
 
-
-
-	/////////////清除记录弹窗确认 方法  clearR_Confirm   S   ////////////
 	function clearR_Confirm(){
 
 		/*代理升级客服弹窗提示结束*/
@@ -162,15 +147,15 @@
 
 
 
-									//关闭弹窗
+
 									var dialogBox = api.require('dialogBox');
 									dialogBox.close({
 											dialogName: 'alert'
 									});
 
-									 //确认清除 执行命令
+
 											api.ajax({
-										        url:'http://47.106.223.14/login/login/deljilu?uid=' + localStorage.getItem('user_id')
+										        url:'http://baidu.com/login/login/deljilu?uid=' + localStorage.getItem('user_id')
 									        },function(ret,err){
 									        	//coding...
 									        });
@@ -196,10 +181,10 @@
 
 				}
 		});
-		/*    代理升级客服弹窗提示结束    */
+
 
 	}
-	/////////////清除记录弹窗确认 方法  clearR_Confirm   E   ////////////
+
 
 
 </script>
